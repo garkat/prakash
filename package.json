@@ -1,0 +1,23 @@
+{
+  "name": "prakash",
+  "version": "1.0.0",
+  "description": "Praksash: A source of enlightenment, skill, wisdom.",
+  "repository": "https://github.com/garkat/prakash.git",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-pushed": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md}": [
+      "prettier -c"
+    ]
+  }
+}
